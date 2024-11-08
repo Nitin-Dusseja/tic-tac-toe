@@ -1,0 +1,22 @@
+.single-square{
+  width: 85px;
+  height: 85px;
+  background-color: #383838;
+  border-radius: 10px;
+  margin: auto;
+}
+.single-square:hover{
+  cursor: pointer;
+}
+
+.not-allowed{
+  cursor: not-allowed !important;
+}
+
+.circle-won{
+  background-color: hotpink;
+}
+
+.cross-won{
+  background-color: rgb(0, 183, 255);
+}

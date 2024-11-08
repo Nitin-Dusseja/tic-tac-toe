@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+
+*,*::after,*::before{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #252525;
+  color: white;
+  font-family: "Happy Monkey", system-ui;
+  overflow: hidden;
+}
