@@ -3,15 +3,15 @@ const { Server } = require("socket.io");
 // const dotenv = require("dotenv");
 // dotenv.config();
 
-var cors = require("cors");
-app.use(cors());
-
 // const PORT = process.env.PORT;
 const httpServer = createServer();
 const io = new Server(httpServer, {
-  cors: "*",
-  credentials: true, //access-control-allow-credentials:true
-  optionSuccessStatus: 200,
+  cors: {
+    origin: "http://localhost:5173/",
+    methods: ["GET", "POST"],
+    allowedHeaders: ["my-custom-header"],
+    credentials: true,
+  },
 });
 
 const allUsers = {};
