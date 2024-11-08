@@ -7,6 +7,8 @@ const { Server } = require("socket.io");
 const httpServer = createServer();
 const io = new Server(httpServer, {
   cors: "*",
+  credentials: true, //access-control-allow-credentials:true
+  optionSuccessStatus: 200,
 });
 
 const allUsers = {};
